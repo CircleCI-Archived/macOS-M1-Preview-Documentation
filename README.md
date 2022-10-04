@@ -10,6 +10,7 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 * [Xcode 14.0.1](https://circleci.com/docs/testing-ios#supported-xcode-versions)
 * [Xcode 13.4.1](https://circleci.com/docs/testing-ios#supported-xcode-versions)
 ### Known Limitations
+* This preview is not FedRAMP compliant.
 * A security review of the new platform is underway.
 * Not compatible with macOS orb.
 * SIP is enabled; file system modification commands will fail.
@@ -18,7 +19,7 @@ The following macOS M1 resource class is available:
 
 |Resource Class Name|vCPU|Memory|Cost
 |---|---|---|---|
-|`macos.m1.medium.gen1`|4|8 GB|TBD credits per minute
+|`macos.m1.medium.gen1`|3|8 GB|TBD credits per minute
 
 ## Example of a CircleCI config using macOS M1 resources
 ```yaml
