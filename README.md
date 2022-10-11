@@ -9,6 +9,8 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 ### Supported Xcode Images
 * [Xcode 14.0.1](https://circleci.com/docs/testing-ios#supported-xcode-versions)
 * [Xcode 13.4.1](https://circleci.com/docs/testing-ios#supported-xcode-versions)
+
+The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images.
 ### Known Limitations
 * This preview is not FedRAMP compliant.
 * A security review of the new platform is underway.
