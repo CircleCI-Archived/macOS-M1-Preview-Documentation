@@ -18,7 +18,7 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 The following macOS M1 resource class is available:
 
 |Resource Class Name|vCPU|Memory
-|---|---|---|---|
+|---|---|---|
 |`macos.m1.medium.gen1`|3|8 GB
 
 ## Example of a CircleCI config using macOS M1 resources
