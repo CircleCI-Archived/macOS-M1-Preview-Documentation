@@ -12,6 +12,7 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 
 The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images.
 ### Known Limitations
+* Given the smaller capacity in the preview, customers may experience queuing. To minimize queuing, we recommend customers reduce the parallelism on their M1 jobs.
 * A security review of the new platform is underway.
 * Not compatible with macOS orb.
 * SIP is enabled; file system modification commands will fail.
@@ -50,5 +51,5 @@ workflows:
 ## How to provide feedback & frequently asked questions
 Please [open an issue](https://github.com/CircleCI-Public/macos-dedicated-host-preview-docs/issues) with any feedback or to report any issues that you encounter.
 ### FAQ
-* Can I run end-to-end tests on M1 resources? (being verified)
-  * Yes! Our M1 resource class provide access to the GPU, allowing for full E2E testing that was previously [unavailable](https://support.circleci.com/hc/en-us/articles/360052160592-Tests-Fail-With-Error-There-is-no-available-Metal-device-on-this-system-) on macOS VMs.
+* Can I run end-to-end tests on M1 resources?
+  * We believe our M1 resource class will provide access to the GPU, allowing for full E2E testing that was previously [unavailable](https://support.circleci.com/hc/en-us/articles/360052160592-Tests-Fail-With-Error-There-is-no-available-Metal-device-on-this-system-) on macOS VMs. We'd love to hear feedback from customers on this experience and whether you run into any friction.
