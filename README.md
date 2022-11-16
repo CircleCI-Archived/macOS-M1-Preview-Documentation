@@ -12,10 +12,10 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 
 The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images.
 ### Known Limitations
-* Given the smaller capacity in the preview, customers may experience queuing. To minimize queuing, we recommend customers reduce the parallelism on their M1 jobs.
+* ***We ask that customers limit their parallelism to 15x or less during the preview.***
+   * Given the smaller capacity in the preview, some queing is expected. Reducing parallelism will help reduce the impact of queuing. 
 * A security review of the new platform is underway.
 * Not compatible with macOS orb.
-* SIP is enabled; file system modification commands will fail.
 ## Pricing and Specs
 The following macOS M1 resource class is available:
 
