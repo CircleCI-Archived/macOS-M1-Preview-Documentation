@@ -15,7 +15,9 @@ The images provided during the preview phase are pre-production and are not indi
 * ***We ask that customers limit their parallelism to 15x or less during the preview.***
    * Given the smaller capacity in the preview, some queing is expected. Reducing parallelism will help reduce the impact of queuing. 
 * A security review of the new platform is underway.
-* Not compatible with macOS orb.
+* SIP is enabled (we are working on disabling it)
+   * File system modification commands will fail
+   * Not compatible with macOS orb
 ## Pricing and Specs
 The following macOS M1 resource class is available:
 
