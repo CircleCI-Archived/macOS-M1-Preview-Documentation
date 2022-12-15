@@ -10,7 +10,7 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 * [Xcode 13.4.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode13-txt)
 * [Xcode 14.0.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode14-txt)
 
-The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images.
+The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images. **Rosetta will not be pre-installed on the final images.**
 ### Known Limitations
 * ***We ask that customers limit their parallelism to 15x or less during the preview.***
    * Given the smaller capacity in the preview, some queing is expected. Reducing parallelism will help reduce the impact of queuing. 
