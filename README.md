@@ -6,22 +6,24 @@ The purpose of this repository is to walk you through the details of the macOS M
 
 The M1 resource class is a new macOS option, running on Apple Silicon hardware, for those developing, building, testing, and signing iOS, iPadOS, macOS, WatchOS, and tvOS applications using the Xcode IDE.
 
-### Supported Xcode Images
+### Supported Preview Xcode Images
 * [Xcode 13.4.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode13-txt)
 * [Xcode 14.0.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode14-txt)
 
-The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images and may be updated at any time during the preview phase. We will make the best effort to align the M1 images with the current Intel images. **Rosetta will not be pre-installed on the final images.**
+The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images. Rosetta will not be pre-installed on the final production images, though we will make the best effort to align the M1 images with the current Intel images.
+
+We will launch with an Xcode `14.2.0` production image. We will release the remaining images post-launch, with Xcode `13.4.1` being the oldest version we support on Apple Silicon resources. 
+
 ### Known Limitations
-* ***We ask that customers limit their parallelism to 15x or less during the preview.***
-   * Given the smaller capacity in the preview, some queing is expected. Reducing parallelism will help reduce the impact of queuing. 
-* A security review of the new platform is underway.
+* Jobs requiring an active desktop session
+   * If you are unable to start an active desktop session, we suggest starting a VNC session as a temporary workaround. Instructions for doing this can be found in our [support docs](https://support.circleci.com/hc/en-us/articles/360020345334-How-to-connect-to-a-macOS-container-via-VNC).
 
 ## Pricing and Specs
 The following macOS M1 resource class is available:
 
-|Resource Class Name|vCPU|Memory
-|---|---|---|
-|`macos.m1.large.gen1`|8vCPU|12 GB
+|Resource Class Name|vCPU|Memory|Price
+|---|---|---|---|
+|`macos.m1.large.gen1`|8vCPU|12 GB|400 credits/minute
 
 ## Example of a CircleCI config using macOS M1 resources
 ```yaml
@@ -53,3 +55,5 @@ Please [open an issue](https://github.com/CircleCI-Public/macos-dedicated-host-p
 ### FAQ
 * Can I run end-to-end tests on M1 resources?
   * We believe our M1 resource class will provide access to the GPU, allowing for full E2E testing that was previously [unavailable](https://support.circleci.com/hc/en-us/articles/360052160592-Tests-Fail-With-Error-There-is-no-available-Metal-device-on-this-system-) on macOS VMs. We'd love to hear feedback from customers on this experience and whether you run into any friction.
+* Will you be offering a medium Apple Silicon VM option?
+  * We are planning to offer a medium option in the future, though no further details or timelines are available at this time. 
