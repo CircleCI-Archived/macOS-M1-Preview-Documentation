@@ -12,11 +12,12 @@ The M1 resource class is a new macOS option, running on Apple Silicon hardware, 
 
 The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images. Rosetta will not be pre-installed on the final production images, though we will make the best effort to align the M1 images with the current Intel images.
 
-We will launch with an Xcode `14.2.0` production image. We will release the remaining images post-launch, with Xcode `13.4.1` being the oldest version we support on Apple Silicon resources. 
+We will launch with an Xcode `14.2.0` production image and will release the remaining images post-launch. Xcode `13.4.1` is the oldest version we will support on Apple Silicon resources. 
 
-### Known Limitations
+### Known Limitations & Important Information
 * Jobs requiring an active desktop session
    * If you are unable to start an active desktop session, we suggest starting a VNC session as a temporary workaround. Instructions for doing this can be found in our [support docs](https://support.circleci.com/hc/en-us/articles/360020345334-How-to-connect-to-a-macOS-container-via-VNC).
+* In response to a [bug](https://github.com/aws/aws-cli/issues/7481) with S3 that impacted network performance, we have implemented a temporary workaround to use accelerated data transfer. Once the S3 fix has been deployed, we will go bad to using normal S3 data transfer. More details can be found in the [closed issue](https://github.com/CircleCI-Public/macOS-M1-Preview-Documentation/issues/1).
 
 ## Pricing and Specs
 The following macOS M1 resource class is available:
