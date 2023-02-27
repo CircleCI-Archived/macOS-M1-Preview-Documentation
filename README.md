@@ -7,8 +7,9 @@ The purpose of this repository is to walk you through the details of the macOS M
 The M1 resource class is a new macOS option, running on Apple Silicon hardware, for those developing, building, testing, and signing iOS, iPadOS, macOS, WatchOS, and tvOS applications using the Xcode IDE.
 
 ### Supported Preview Xcode Images
-* [Xcode 13.4.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode13-txt)
-* [Xcode 14.0.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode14-txt)
+* [Xcode 13.4.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode13-txt) **(PREVIEW IMAGE - WILL BE REMOVED ON MARCH 9)**
+* [Xcode 14.0.1](https://gist.github.com/BytesGuy/febf02b354dce391d7a14cb994b09d99#file-xcode14-txt) **(PREVIEW IMAGE - WILL BE REMOVED ON MARCH 9)**
+* [Xcode 14.2.0](https://circle-macos-docs.s3.amazonaws.com/image-manifest/v11441/manifest.txt) **(PRODUCTION IMAGE)**
 
 The images provided during the preview phase are pre-production and are not indicative of the final images that will ship at product launch. Software setup, software versions, and general configurations may differ compared to our Intel based images. Rosetta will not be pre-installed on the final production images, though we will make the best effort to align the M1 images with the current Intel images.
 
