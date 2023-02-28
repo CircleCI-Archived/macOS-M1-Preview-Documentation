@@ -34,7 +34,7 @@ version: 2.1
 jobs: # a basic unit of work in a run
   build-and-test: # your job name
     macos:
-      xcode: 13.4.1 # indicate your selected version of Xcode
+      xcode: 14.2.0 # indicate your selected version of Xcode
     resource_class: macos.m1.large.gen1
     steps: # a series of commands to run
       - checkout  # pull down code from your VCS
