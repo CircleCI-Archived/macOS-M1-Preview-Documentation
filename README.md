@@ -1,3 +1,6 @@
+| :exclamation: M1 support will launch on March 2, 2023. This repo will be archived on March 10th.   |
+|----------------------------------------------------------------------------------------------------|
+
 # macOS M1 Preview Documentation
 
 The purpose of this repository is to walk you through the details of the macOS M1 preview on CircleCI.
